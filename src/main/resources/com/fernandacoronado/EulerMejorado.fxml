@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="656.0" stylesheets="@Metodos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fernandacoronado.EulerMejorado">
+    <children>
+        <Pane prefHeight="440.0" prefWidth="656.0" style="-fx-background-color: #fff">
+            <ImageView fitHeight="80.0" fitWidth="244.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@logo.png" />
+                </image>
+            </ImageView>
+            <Label id="txtTema" fx:id="txtTema" layoutX="275.0" layoutY="34.0" prefHeight="33.0" prefWidth="357.0" styleClass="txtTema" text="EULER MEJORADO" />
+            <Label id="txtEtiquetas" layoutX="14.0" layoutY="125.0" prefHeight="33.0" prefWidth="39.0" styleClass="txtEtiquetas" text="y' =" />
+            <Label id="txtEtiquetas" layoutX="14.0" layoutY="171.0" prefHeight="33.0" prefWidth="39.0" styleClass="txtEtiquetas" text="x0 =" />
+            <Label id="txtEtiquetas" layoutX="14.0" layoutY="223.0" styleClass="txtEtiquetas" text="y0 =" />
+            <Label id="txtEtiquetas" layoutX="14.0" layoutY="268.0" styleClass="txtEtiquetas" text="xf =" />
+            <Label id="txtEtiquetas" layoutX="14.0" layoutY="314.0" styleClass="txtEtiquetas" text="h =" />
+            <TextField id="fdDato" fx:id="fdY" layoutX="54.0" layoutY="125.0" prefHeight="33.0" prefWidth="167.0" promptText="x^2-4xy" styleClass="fdDato" />
+            <TextField id="fdDato" fx:id="fdX0" layoutX="54.0" layoutY="171.0" prefHeight="33.0" prefWidth="167.0" promptText="0" styleClass="fdDato" />
+            <TextField id="fdDato" fx:id="fdY0" layoutX="54.0" layoutY="215.0" prefHeight="33.0" prefWidth="167.0" promptText="1" styleClass="fdDato" />
+            <TextField id="fdDato" fx:id="fdXF" layoutX="54.0" layoutY="260.0" prefHeight="33.0" prefWidth="167.0" promptText="2" styleClass="fdDato" />
+            <TextField id="fdDato" fx:id="fdH" layoutX="54.0" layoutY="306.0" prefHeight="33.0" prefWidth="167.0" promptText="0.1" styleClass="fdDato" />
+            <Button fx:id="btnCalcular" onAction="#calcular" layoutX="103.0" layoutY="368.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="118.0" text="CALCULAR" />
+            <Button fx:id="btnBorrar" layoutX="329.0" layoutY="385.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="118.0" text="BORRAR" />
+            <Button fx:id="btnRegresar" layoutX="477.0" layoutY="385.0" mnemonicParsing="false" onAction="#regresar" prefHeight="33.0" prefWidth="118.0" text="REGRESAR" />
+            <TableView fx:id="tabla" layoutX="251.0" layoutY="125.0" prefHeight="246.0" prefWidth="391.0">
+                <columns>
+                    <TableColumn fx:id="tcX" minWidth="5.0" prefWidth="75.0" resizable="false" styleClass="columnas" text="x0" />
+                    <TableColumn fx:id="tcY" minWidth="5.0" prefWidth="75.0" styleClass="columnas" text="y0" />
+                    <TableColumn fx:id="tcVR" prefWidth="75.0" styleClass="columnas" text="Valor real" />
+                    <TableColumn fx:id="tcEA" prefWidth="75.0" styleClass="columnas" text="Error absoluto" />
+                    <TableColumn fx:id="tcER" prefWidth="75.0" styleClass="columnas" text="\% error relativo" />
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+            </TableView>
+            <Separator layoutX="235.0" layoutY="104.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="4.0" />
+        </Pane>
+    </children>
+</AnchorPane>

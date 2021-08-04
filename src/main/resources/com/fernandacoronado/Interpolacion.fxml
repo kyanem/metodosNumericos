@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="497.0" prefWidth="842.0" stylesheets="@Metodos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fernandacoronado.Interpolacion">
+    <children>
+        <Pane prefHeight="497.0" prefWidth="842.0" style="-fx-background-color: #fff">
+            <ImageView fitHeight="80.0" fitWidth="244.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@logo.png" />
+                </image>
+            </ImageView>
+            <Label id="txtTema" fx:id="txtTema" layoutX="357.0" layoutY="34.0" prefHeight="33.0" prefWidth="357.0" styleClass="txtTema" text="INTERPOLACIÓN DE LAGRANGE" />
+            <Label id="txtEtiquetas" layoutX="64.0" layoutY="104.0" prefHeight="33.0" prefWidth="14.0" styleClass="txtEtiquetas" text="x" />
+            <Label id="txtEtiquetas" layoutX="169.0" layoutY="104.0" prefHeight="33.0" prefWidth="14.0" styleClass="txtEtiquetas" text="y" />
+            <TextField id="fdDato" fx:id="txtX" layoutX="51.0" layoutY="137.0" prefHeight="33.0" prefWidth="39.0" promptText="x0" styleClass="fdDato" />
+            <TextField id="fdDato" fx:id="txtY" layoutX="152.0" layoutY="137.0" prefHeight="33.0" prefWidth="39.0" promptText="f(x0)" styleClass="fdDato" />
+            <Button fx:id="btnCalcular" layoutX="61.0" layoutY="443.0" mnemonicParsing="false" onAction="#MetodoInterLagrange" prefHeight="33.0" prefWidth="118.0" text="CALCULAR" />
+            <Button fx:id="btnBorrar" layoutX="329.0" layoutY="385.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="118.0" text="BORRAR" />
+            <Button fx:id="btnRegresar" layoutX="627.0" layoutY="385.0" mnemonicParsing="false" onAction="#regresar" prefHeight="33.0" prefWidth="118.0" text="REGRESAR" />
+            <TableView fx:id="tableViewResultados" layoutX="251.0" layoutY="173.0" prefHeight="198.0" prefWidth="568.0">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+            </TableView>
+            <Separator layoutX="235.0" layoutY="104.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="4.0" />
+         <Label id="txtEtiquetas" layoutX="256.0" layoutY="117.0" prefHeight="33.0" prefWidth="39.0" styleClass="txtEtiquetas" text="P(x) =" />
+         <Label id="txtResultado" fx:id="txtResultado" layoutX="299.0" layoutY="117.0" prefHeight="33.0" prefWidth="328.0" styleClass="txtResultado" text="eeee" />
+         <ListView fx:id="listView" layoutX="20.0" layoutY="218.0" prefHeight="200.0" prefWidth="200.0" />
+         <Button fx:id="btnAgregaPunto" layoutX="53.0" layoutY="180.0" mnemonicParsing="false" onAction="#agregarPunto" text="Agregar punto" />
+        </Pane>
+    </children>
+</AnchorPane>

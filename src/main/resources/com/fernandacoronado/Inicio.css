@@ -1,0 +1,69 @@
+
+#txtUni {
+    -fx-font-family: Verdana;
+    -fx-font-size: 14px;
+    -fx-text-fill: #161d38;
+    -fx-font-weight: Bold;
+}
+
+#txtCarrera {
+    -fx-font-family: Verdana;
+    -fx-font-size: 13px;
+    -fx-text-fill: #161d38;
+}
+
+#txtTema, #txtMetodos, #txtMateria {
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-alignment: Center;
+}
+
+#txtDoc, #txtFecha, #txtFer, #txtKarla, #txtOrnelas, #txtEquipo {
+    -fx-text-fill: #000;
+    -fx-font-family: Arial;
+    -fx-alignment: Center;
+}
+
+#txtTema {
+    -fx-font-weight: Bold;
+    -fx-font-size: 15px;
+}
+
+#txtMetodos {
+    -fx-font-style: Italic;
+    -fx-font-size: 13px;
+    -fx-font-weight: Bold;
+}
+
+#txtMateria {
+    -fx-font-weight: Bold;
+    -fx-font-size: 13px;
+}
+
+#txtFer, #txtKarla, #txtOrnelas {
+    -fx-font-size: 12px;
+}
+
+#txtDoc, #txtFecha, #txtEquipo {
+    -fx-font-size: 10px;
+}
+
+#txtFecha {
+    -fx-font-style: Italic;
+}
+
+.button {
+    -fx-background-radius: 5;
+    -fx-font-family: Verdana;
+    -fx-background-color: #161d38;
+    -fx-text-fill: #fff;
+    -fx-font-weight: Bold;
+}
+
+.button:hover {
+    -fx-background-color: #496ca7;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
